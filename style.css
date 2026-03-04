@@ -27,6 +27,7 @@ html {
   justify-content: space-between;
   cursor: pointer;
   padding: 0 0.5rem;
+  overflow: hidden;
 }
 
 .lines {
@@ -59,8 +60,23 @@ html {
   right: 0;
 }
 
+.menu {
+  transition: transform 0.3s 0.1s;
+}
+
+.navigate .menu {
+  transform: translateY(-110%);
+  transition: transform 0.3s;
+}
+
+.navigate .close {
+  transform: translateY(-120%);
+  transition: transform 0.3s 0.1s;
+}
+
 .close {
   top: 100%;
+  transition: transform 0.3s;
 }
 
 .navigation {
@@ -95,6 +111,13 @@ html {
   text-transform: uppercase;
   letter-spacing: 3rem;
   z-index: 100;
+  transition: all 1s;
+}
+
+.navigate .main-heading {
+  transform: translateY(-5rem);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .main-heading-left {
@@ -107,6 +130,13 @@ html {
   position: absolute;
   bottom: 10rem;
   left: 10rem;
+  transition: all 1s;
+}
+
+.navigate .about {
+  transform: translateX(5rem);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .about h1 {
@@ -160,6 +190,12 @@ html {
   top: 5rem;
   right: 5rem;
   z-index: 100;
+  transition: all 0.5s;
+}
+
+.navigate .social-media {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .social-media i {
@@ -189,6 +225,13 @@ html {
   bottom: 6rem;
   right: 6rem;
   z-index: 100;
+  transition: all 1s;
+}
+
+.navigate .techs {
+  transform: translateX(-5rem);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .techs h1 {
