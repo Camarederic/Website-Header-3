@@ -40,6 +40,15 @@ html {
   width: 2.5rem;
   height: 0.2rem;
   background-color: #d9f4de;
+  transition: transform 0.3s cubic-bezier(0.5, 0, 0, 0.5);
+}
+
+.navigate .line-1 {
+  transform: rotateZ(135deg) translate(0.7rem);
+}
+
+.navigate .line-2 {
+  transform: rotateZ(225deg) translate(0.7rem);
 }
 
 .menu-icon span {
